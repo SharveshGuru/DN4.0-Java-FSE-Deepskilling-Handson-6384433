@@ -11,6 +11,5 @@ public class App {
         DocumentFactory excelFactory = new ExcelDocumentFactory();
         Document excelDoc = excelFactory.createDocument();
         excelDoc.open();
-
     }
 }
