@@ -1,5 +1,5 @@
 public interface Stock {
-    void register();
-    void deregister();
+    void register(Observer observer);
+    void deregister(Observer observer);
     void notifyObserver();
 }
