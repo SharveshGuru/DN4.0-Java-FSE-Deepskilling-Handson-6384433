@@ -1,7 +1,7 @@
 public class SearchUtility {
-    public static Product linearSearch(Product[] products, int productId) {
+    public static Product linearSearch(Product[] products, String productName) {
         for (Product product : products) {
-            if (product.getProductId() == productId) {
+            if (product.getProductName() == productName) {
                 return product;
             }
         }
