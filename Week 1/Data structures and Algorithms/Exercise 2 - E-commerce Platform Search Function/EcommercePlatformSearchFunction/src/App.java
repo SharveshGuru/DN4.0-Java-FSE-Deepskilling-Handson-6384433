@@ -14,7 +14,16 @@ public class App {
         Product foundProduct = SearchUtility.linearSearch(products, "Shoes");
         if (foundProduct != null) {
             System.out.println("Linear Search Found: " + foundProduct.getProductName() + " in " + foundProduct.getCategory());
-        } else {
+        } 
+        else {
+            System.out.println("Product not found using Linear Search.");
+        }
+
+        foundProduct = SearchUtility.linearSearch(products, "Laptop");
+        if (foundProduct != null) {
+            System.out.println("Linear Search Found: " + foundProduct.getProductName() + " in " + foundProduct.getCategory());
+        } 
+        else {
             System.out.println("Product not found using Linear Search.");
         }
 
@@ -23,7 +32,17 @@ public class App {
         foundProduct = SearchUtility.binarySearch(products, "Shirt");
         if (foundProduct != null) {
             System.out.println("Binary Search Found: " + foundProduct.getProductName() + " in " + foundProduct.getCategory());
-        } else {
+        } 
+        else {
+            System.out.println("Product not found using Binary Search.");
+        }
+
+        foundProduct = SearchUtility.binarySearch(products, "Headphones");
+
+        if (foundProduct != null) {
+            System.out.println("Binary Search Found: " + foundProduct.getProductName() + " in " + foundProduct.getCategory());
+        } 
+        else {
             System.out.println("Product not found using Binary Search.");
         }
     }
