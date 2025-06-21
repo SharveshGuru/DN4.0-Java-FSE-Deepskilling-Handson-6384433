@@ -5,7 +5,7 @@ public class FinancialForecast {
         if(years==0) {
             return presentValue;
         }
-        return presentValue * Math.pow(1 + interestRate, years);
+        return calculateFutureValue(presentValue, interestRate, years-1) * (1 + interestRate);
     }    
 
     public static double memoizedCalculateFutureValue(double presentValue, double interestRate, int years, HashMap<Integer, Double> memo) {
@@ -15,7 +15,7 @@ public class FinancialForecast {
         if (memo.containsKey(years)) {
             return memo.get(years);
         }
-        double futureValue = presentValue * Math.pow(1 + interestRate, years);
+        double futureValue = memoizedCalculateFutureValue(presentValue, interestRate, years-1, memo)*(1+ interestRate);
         memo.put(years, futureValue);
         return futureValue;
     }
