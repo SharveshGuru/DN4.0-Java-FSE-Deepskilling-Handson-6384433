@@ -58,4 +58,34 @@ public class Order {
 
         return i + 1;
     }
+
+    public static void main(String[] args) {
+        Order[] orders = {
+            new Order(1, "Alice", 350.75),
+            new Order(2, "Bob", 120.50),
+            new Order(3, "Charlie", 780.00),
+            new Order(4, "Diana", 450.20)
+        };
+
+        System.out.println("Original Orders:");
+        for (Order o : orders) 
+        System.out.println(o);
+
+        bubbleSort(orders);
+        System.out.println("\nBubble Sorted Orders:");
+        for (Order o : orders) 
+        System.out.println(o);
+
+        orders = new Order[]{
+            new Order(1, "Alice", 350.75),
+            new Order(2, "Bob", 120.50),
+            new Order(3, "Charlie", 780.00),
+            new Order(4, "Diana", 450.20)
+        };
+
+        quickSort(orders, 0, orders.length - 1);
+        System.out.println("\nQuick Sorted Orders:");
+        for (Order o : orders) 
+        System.out.println(o);
+    }
 }
