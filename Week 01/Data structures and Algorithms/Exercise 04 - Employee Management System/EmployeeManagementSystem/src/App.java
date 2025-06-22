@@ -29,6 +29,6 @@ public class App {
 
         ems.addEmployee(new Employee(104, "David", "QA", 50000));
         ems.addEmployee(new Employee(105, "Eva", "Support", 45000));
-        ems.addEmployee(new Employee(106, "Frank", "HR", 47000)); // This should not be added
+        ems.addEmployee(new Employee(106, "Frank", "HR", 47000)); 
     }
 }
