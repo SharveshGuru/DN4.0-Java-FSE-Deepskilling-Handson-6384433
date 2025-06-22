@@ -39,11 +39,10 @@ public class EmployeeManagementSystem {
         for (int i = 0; i < count; i++) {
             if (employees[i].employeeId == id) {
                 found = true;
-                // Shift remaining elements to the left
                 for (int j = i; j < count - 1; j++) {
                     employees[j] = employees[j + 1];
                 }
-                employees[--count] = null; // Remove last duplicate
+                employees[--count] = null; 
                 System.out.println("Employee deleted successfully.");
                 break;
             }
