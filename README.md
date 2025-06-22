@@ -11,8 +11,8 @@ This repository is organized to provide easy access to weekly programming exerci
 
 ## Folder Organization
 
-- **Week Folders**: Each week's folder contains the source code files, implementations, and solutions for that week's hands-on exercises
-- **Exercise Documents**: Word documents in the root directory contain compiled exercise requirements and instructions for each respective week
+- **Week Folders**: Each week's folder contains the source code files, implementations, and solutions for that week's hands-on exercises.
+- **Exercise Documents**: Word documents in the root directory contain compiled handson exercise solutions for each respective week.
 
 ## Weekly Content Overview
 
