@@ -19,7 +19,7 @@ This repository is organized to provide easy access to weekly programming exerci
 Each week builds upon previous concepts while introducing new technologies and methodologies:
 
 - **Week 1**: Design principles & Patterns; Data structures and Algorithms
-- **Week 2**: PL/SQL programming; TDD using JUnit5 and Mockito
+- **Week 2**: PL/SQL programming; TDD using JUnit5 and Mockito; SLF4J logging framework
 - **Week 3**: Spring Core and Maven; Spring Data JPA with Spring Boot, Hibernate
 - **Week 4**: Spring REST using Spring Boot 3
 - **Week 5**: Microservices with Spring Boot 3 and Spring Cloud
