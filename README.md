@@ -33,7 +33,7 @@ Each week builds upon previous concepts while introducing new technologies and m
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/SharveshGuru/DN4.0-Java-FSE-Deepskilling-Handson.git
+   git clone https://github.com/SharveshGuru/DN4.0-Java-FSE-Deepskilling-Handson-6384433.git
    cd DN4.0-Java-FSE-Deepskilling-Handson
    ```
 
