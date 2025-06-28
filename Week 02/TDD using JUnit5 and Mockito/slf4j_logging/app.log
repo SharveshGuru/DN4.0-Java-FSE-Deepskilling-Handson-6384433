@@ -1,0 +1,4 @@
+15:51:34.391 [main] INFO  c.e.slf4j.AppenderLoggingExample - This message will appear in both console and file.
+15:51:34.395 [main] DEBUG c.e.slf4j.AppenderLoggingExample - Debug message written to both appenders.
+15:51:34.395 [main] WARN  c.e.slf4j.AppenderLoggingExample - Warning message logged.
+15:51:34.395 [main] ERROR c.e.slf4j.AppenderLoggingExample - An error occurred while writing to both appenders.
