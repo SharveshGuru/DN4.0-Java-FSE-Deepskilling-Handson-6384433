@@ -24,6 +24,6 @@ public class MyServiceTest {
         MyService service = new MyService(mockApi);
         service.fetchData();
 
-        verify(mockApi).getData();  // Verifies method was called once
+        verify(mockApi).getData();  
     }
 }
