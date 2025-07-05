@@ -9,7 +9,7 @@ public class LibraryManagementApplication {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
         BookService bookService = context.getBean(BookService.class);
-        bookService.addBook("Project Hail Mary");
+        bookService.addBook("From the Earth to the Moon");
         ((org.springframework.context.ConfigurableApplicationContext) context).close();
     }
 }
