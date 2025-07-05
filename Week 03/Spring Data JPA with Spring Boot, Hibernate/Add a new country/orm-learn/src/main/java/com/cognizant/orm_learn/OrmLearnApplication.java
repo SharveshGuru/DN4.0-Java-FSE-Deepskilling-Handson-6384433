@@ -24,6 +24,7 @@ public class OrmLearnApplication {
 
         testGetAllCountries();
         testFindCountryByCode(); 
+        testAddCountry();
     }
 
     private static void testGetAllCountries() {
@@ -41,6 +42,24 @@ public class OrmLearnApplication {
         } catch (CountryNotFoundException e) {
             LOGGER.error("Exception: {}", e.getMessage());
         }
+        LOGGER.info("End");
+    }
+
+    private static void testAddCountry() {
+        LOGGER.info("Start");
+
+        Country newCountry = new Country();
+        newCountry.setCode("JP");
+        newCountry.setName("Japan");
+
+        countryService.addCountry(newCountry);
+        try {
+            Country retrievedCountry = countryService.findCountryByCode("JP");
+            LOGGER.debug("Added Country: {}", retrievedCountry);
+        } catch (CountryNotFoundException e) {
+            LOGGER.error("Country not found after insert: {}", e.getMessage());
+        }
+
         LOGGER.info("End");
     }
 }
