@@ -8,9 +8,8 @@ public class LibraryManagementApplication {
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
-        BookService bookService = context.getBean("bookService", BookService.class);
+        BookService bookService = context.getBean(BookService.class);
         bookService.addBook("Project Hail Mary");
-
         ((org.springframework.context.ConfigurableApplicationContext) context).close();
     }
 }
