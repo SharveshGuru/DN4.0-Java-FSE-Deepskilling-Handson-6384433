@@ -1,0 +1,3 @@
+com\example\librarymanagement\Main.class
+com\example\librarymanagement\repository\BookRepository.class
+com\example\librarymanagement\service\BookService.class
