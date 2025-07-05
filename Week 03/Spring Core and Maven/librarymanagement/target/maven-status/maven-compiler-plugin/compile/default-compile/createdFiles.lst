@@ -1,3 +1,4 @@
-com\example\librarymanagement\Main.class
+com\example\librarymanagement\LibraryManagementApplication.class
+com\example\librarymanagement\aspect\LoggingAspect.class
 com\example\librarymanagement\repository\BookRepository.class
 com\example\librarymanagement\service\BookService.class
